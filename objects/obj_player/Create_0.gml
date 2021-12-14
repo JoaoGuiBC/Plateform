@@ -1,4 +1,4 @@
-spd = 5;
+spd = 4;
 hspd = 0;
 vspd = 0;
-grv = 0.6;
+grv = 0.5;

@@ -1,6 +1,19 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"spr_industrial_tile_9","path":"sprites/spr_industrial_tile_9/spr_industrial_tile_9.yy",},"order":8,},
+    {"id":{"name":"spr_wall_placeholder","path":"sprites/spr_wall_placeholder/spr_wall_placeholder.yy",},"order":2,},
+    {"id":{"name":"spr_industrial_tile_2","path":"sprites/spr_industrial_tile_2/spr_industrial_tile_2.yy",},"order":1,},
+    {"id":{"name":"spr_industrial_tile_8","path":"sprites/spr_industrial_tile_8/spr_industrial_tile_8.yy",},"order":7,},
+    {"id":{"name":"spr_industrial_tile_1","path":"sprites/spr_industrial_tile_1/spr_industrial_tile_1.yy",},"order":0,},
+    {"id":{"name":"spr_industrial_tile_6","path":"sprites/spr_industrial_tile_6/spr_industrial_tile_6.yy",},"order":5,},
+    {"id":{"name":"spr_industrial_tile_3","path":"sprites/spr_industrial_tile_3/spr_industrial_tile_3.yy",},"order":2,},
+    {"id":{"name":"spr_industrial_tile_4","path":"sprites/spr_industrial_tile_4/spr_industrial_tile_4.yy",},"order":3,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"spr_industrial_tile_7","path":"sprites/spr_industrial_tile_7/spr_industrial_tile_7.yy",},"order":6,},
+    {"id":{"name":"spr_industrial_tile_5","path":"sprites/spr_industrial_tile_5/spr_industrial_tile_5.yy",},"order":4,},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -15,7 +28,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -32,6 +45,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/tiles.yy","order":3,"resourceVersion":"1.0","name":"tiles","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

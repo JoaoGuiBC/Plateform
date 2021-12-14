@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"spr_industrial_tile_10","path":"sprites/spr_industrial_tile_10/spr_industrial_tile_10.yy",},"order":9,},
     {"id":{"name":"spr_industrial_tile_9","path":"sprites/spr_industrial_tile_9/spr_industrial_tile_9.yy",},"order":8,},
     {"id":{"name":"spr_wall_placeholder","path":"sprites/spr_wall_placeholder/spr_wall_placeholder.yy",},"order":2,},
     {"id":{"name":"spr_industrial_tile_2","path":"sprites/spr_industrial_tile_2/spr_industrial_tile_2.yy",},"order":1,},

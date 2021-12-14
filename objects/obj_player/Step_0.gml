@@ -10,8 +10,9 @@ var move = key_right - key_left
 hspd = move * spd;
 vspd = vspd + grv;
 
-if(hspd != 0) image_xscale = sign(hspd);
-
+if(hspd != 0) {
+	image_xscale = sign(hspd);
+}
 
 //HORIZONTAL COLLISION
 if place_meeting(x+hspd, y, obj_wall) {
@@ -37,4 +38,11 @@ y = y + vspd;
 if place_meeting(x, y+1, obj_wall) and key_jump {
 	vspd -= 10;
 }
+#endregion
+
+#region SPRITE CONTROL
+	if !place_meeting(x, y+vspd, obj_wall) sprite_index = spr_player_jump
+	
+	if place_meeting(x, y+1, obj_wall) and hspd != 0 sprite_index = spr_player_run;
+	if place_meeting(x, y+1, obj_wall) and hspd == 0 sprite_index = spr_player;
 #endregion

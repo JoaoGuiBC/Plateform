@@ -11,10 +11,6 @@ var move = key_right - key_left
 hspd = move * spd;
 vspd = vspd + grv;
 
-if(hspd != 0) {
-	image_xscale = sign(hspd);
-}
-
 //HORIZONTAL COLLISION
 if place_meeting(x+hspd, y, obj_wall) {
 	while(!place_meeting(x+sign(hspd), y, obj_wall)) {
@@ -42,12 +38,37 @@ if place_meeting(x, y+1, obj_wall) and key_jump {
 #endregion
 
 #region SPRITE CONTROL
-	if sprite_index != spr_player_shoot {
+	/*if sprite_index != spr_player_shoot {
 		if (!place_meeting(x, y+vspd, obj_wall)) sprite_index = spr_player_jump
 	
 		if (place_meeting(x, y+1, obj_wall) and hspd != 0) sprite_index = spr_player_run;
 		if (place_meeting(x, y+1, obj_wall) and hspd == 0) sprite_index = spr_player;
+	}*/
+	
+	if(hspd != 0) {
+		image_xscale = sign(hspd);
 	}
+	
+	if (sprite_index != spr_player_shoot) {
+		if (!place_meeting(x, y+1, obj_wall)) {
+			sprite_index = spr_player_jump;
+		} else {
+			if (hspd != 0) {
+				sprite_index = spr_player_run;	
+			}
+		}
+		if (hspd == 0) {
+			if (place_meeting(x, y+1, obj_wall)) {
+				sprite_index = spr_player;
+			}
+		}
+		if (hspd != 0) {
+			if (place_meeting(x, y+1, obj_wall)) {
+				sprite_index = spr_player_run;
+			}
+		}
+	}
+	
 #endregion
 
 #region SHOOT POWER
@@ -60,3 +81,7 @@ if place_meeting(x, y+1, obj_wall) and key_jump {
 		sprite_index = spr_player_shoot;
 	}
 #endregion
+
+if (global.life < 1) {
+	game_restart();
+}

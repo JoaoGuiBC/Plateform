@@ -1,2 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
+if (global.life == 0) {
+	draw_sprite(spr_heart, 0, 25, 25);
+}
+if (global.life == 1) {
+	draw_sprite(spr_heart, 1, 25, 25);
+}
+if (global.life == 2) {
+	draw_sprite(spr_heart, 2, 25, 25);
+}
+if (global.life == 3) {
+	draw_sprite(spr_heart, 3, 25, 25);
+}
+if (global.life == 4) {
+	draw_sprite(spr_heart, 4, 25, 25);
+}

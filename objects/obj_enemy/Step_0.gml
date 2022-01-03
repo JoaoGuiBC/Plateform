@@ -10,5 +10,6 @@ if state = EnemyState.ATTACK {
 }
 
 if hp <= 0 {
+	image_speed = 0.4;
 	sprite_index = spr_enemy_death;
 }

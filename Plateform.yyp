@@ -1,11 +1,11 @@
 {
   "resources": [
     {"id":{"name":"EnemyStateIdle","path":"scripts/EnemyStateIdle/EnemyStateIdle.yy",},"order":0,},
+    {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},"order":8,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_background_2","path":"sprites/spr_background_2/spr_background_2.yy",},"order":2,},
     {"id":{"name":"spr_wall_placeholder","path":"sprites/spr_wall_placeholder/spr_wall_placeholder.yy",},"order":2,},
-    {"id":{"name":"Punk_attack3","path":"sprites/Punk_attack3/Punk_attack3.yy",},"order":6,},
     {"id":{"name":"spr_platforms","path":"sprites/spr_platforms/spr_platforms.yy",},"order":15,},
     {"id":{"name":"spr_background_1","path":"sprites/spr_background_1/spr_background_1.yy",},"order":1,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":4,},
@@ -23,6 +23,7 @@
     {"id":{"name":"spr_enemy_run","path":"sprites/spr_enemy_run/spr_enemy_run.yy",},"order":1,},
     {"id":{"name":"spr_background_3","path":"sprites/spr_background_3/spr_background_3.yy",},"order":3,},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},"order":6,},
+    {"id":{"name":"font","path":"fonts/font/font.yy",},"order":0,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":2,},
     {"id":{"name":"spr_power","path":"sprites/spr_power/spr_power.yy",},"order":5,},
     {"id":{"name":"spr_background_0","path":"sprites/spr_background_0/spr_background_0.yy",},"order":0,},

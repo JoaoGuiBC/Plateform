@@ -42,7 +42,7 @@ if place_meeting(x, y+1, obj_wall) and key_jump {
 		image_xscale = sign(hspd);
 	}
 	
-	if (sprite_index != spr_player_shoot) {
+	if (sprite_index != spr_player_shoot and !dying) {
 		if (!place_meeting(x, y+1, obj_wall)) {
 			sprite_index = spr_player_jump;
 		} else {
@@ -65,10 +65,7 @@ if place_meeting(x, y+1, obj_wall) and key_jump {
 #endregion
 
 #region SHOOT POWER
-	flipped = direction;
-	power_x = (x + 4) * flipped;
 	_xx = x + lengthdir_x(8 * image_xscale, image_angle);
-	y_offset = lengthdir_y(-20, image_angle);
 	
 	if key_shoot and global.powers > 0 {
 		sprite_index = spr_player_shoot;
@@ -76,5 +73,8 @@ if place_meeting(x, y+1, obj_wall) and key_jump {
 #endregion
 
 if (global.life < 1) {
-	game_restart();
+	dying = true;
+	key_shoot = false;
+	
+	sprite_index = spr_player_death;
 }

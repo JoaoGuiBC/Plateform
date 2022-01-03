@@ -10,5 +10,6 @@ switch(sprite_index) {
 		break;
 	
 	case spr_player_death:
-		game_restart();
+		image_alpha = 0;
+		spd = 0;
 }

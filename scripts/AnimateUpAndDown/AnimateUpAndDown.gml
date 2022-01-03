@@ -7,8 +7,6 @@ function AnimateUpAndDown(){
 
 	y += yHeight;
 
-	show_debug_message(yHeight);
-
 	if yHeight <= -0.75 {
 		isIncreasingHeight = false;
 	}

@@ -4,7 +4,6 @@ vspd = 0;
 grv = 0.5;
 
 global.powers = 10;
-global.life = 4;
 
 image_speed = 1;
 

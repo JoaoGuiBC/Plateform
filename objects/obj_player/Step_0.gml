@@ -32,7 +32,7 @@ if place_meeting(x, y+vspd, obj_wall) {
 y = y + vspd;
 
 //JUMP
-if place_meeting(x, y+1, obj_wall) and key_jump {
+if place_meeting(x, y+1, obj_wall) and key_jump and !dying {
 	vspd -= 10;
 }
 #endregion
@@ -67,7 +67,7 @@ if place_meeting(x, y+1, obj_wall) and key_jump {
 #region SHOOT POWER
 	_xx = x + lengthdir_x(8 * image_xscale, image_angle);
 	
-	if key_shoot and global.powers > 0 {
+	if key_shoot and global.powers > 0 and !dying {
 		sprite_index = spr_player_shoot;
 	}
 #endregion
